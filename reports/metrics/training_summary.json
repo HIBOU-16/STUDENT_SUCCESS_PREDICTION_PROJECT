@@ -1,0 +1,441 @@
+{
+  "scenarios": {
+    "A_inscription": {
+      "retained_model": "random_forest_smote",
+      "thresholds": {
+        "seuil_moyen": 0.2078,
+        "seuil_eleve": 0.3163,
+        "rappel_vise_seuil_moyen": 0.9
+      },
+      "test": {
+        "accuracy": 0.6112994350282486,
+        "f1_macro": 0.5410557617942728,
+        "recall_dropout": 0.6126760563380281,
+        "precision_dropout": 0.6170212765957447,
+        "f1_dropout": 0.6148409893992933,
+        "roc_auc_dropout": 0.811745682079164,
+        "pr_auc_dropout": 0.7222416136025479,
+        "recall_enrolled": 0.27672955974842767,
+        "recall_graduate": 0.7307692307692307
+      },
+      "alert_at_medium": {
+        "seuil": 0.2078,
+        "rappel": 0.9014084507042254,
+        "precision": 0.4317032040472175,
+        "f2": 0.7403123192596877,
+        "faux_negatifs": 28,
+        "faux_positifs": 337,
+        "part_signalee": 0.6700564971751413
+      },
+      "alert_at_high": {
+        "seuil": 0.3163,
+        "rappel": 0.7183098591549296,
+        "precision": 0.5746478873239437,
+        "f2": 0.6841046277665996,
+        "faux_negatifs": 80,
+        "faux_positifs": 151,
+        "part_signalee": 0.4011299435028249
+      },
+      "risk_levels": [
+        {
+          "niveau": "Risque faible",
+          "effectif": 292,
+          "dropouts": 28,
+          "taux_abandon_reel": 0.0958904109589041,
+          "part_des_dropouts": 0.09859154929577464
+        },
+        {
+          "niveau": "Risque moyen",
+          "effectif": 238,
+          "dropouts": 52,
+          "taux_abandon_reel": 0.2184873949579832,
+          "part_des_dropouts": 0.18309859154929578
+        },
+        {
+          "niveau": "Risque élevé",
+          "effectif": 355,
+          "dropouts": 204,
+          "taux_abandon_reel": 0.5746478873239437,
+          "part_des_dropouts": 0.7183098591549296
+        }
+      ],
+      "top_importance": [
+        {
+          "variable": "tuition_fees_up_to_date",
+          "importance_mean": 0.054,
+          "importance_std": 0.006
+        },
+        {
+          "variable": "course",
+          "importance_mean": 0.0259,
+          "importance_std": 0.0097
+        },
+        {
+          "variable": "scholarship_holder",
+          "importance_mean": 0.0242,
+          "importance_std": 0.0055
+        },
+        {
+          "variable": "debtor",
+          "importance_mean": 0.0145,
+          "importance_std": 0.0065
+        },
+        {
+          "variable": "gender",
+          "importance_mean": 0.0085,
+          "importance_std": 0.0039
+        },
+        {
+          "variable": "gdp",
+          "importance_mean": 0.0034,
+          "importance_std": 0.0034
+        },
+        {
+          "variable": "age_at_enrollment",
+          "importance_mean": 0.0032,
+          "importance_std": 0.0071
+        },
+        {
+          "variable": "previous_qualification",
+          "importance_mean": 0.0029,
+          "importance_std": 0.0027
+        }
+      ]
+    },
+    "B_fin_S1": {
+      "retained_model": "random_forest_smote",
+      "thresholds": {
+        "seuil_moyen": 0.1819,
+        "seuil_eleve": 0.3712,
+        "rappel_vise_seuil_moyen": 0.9
+      },
+      "test": {
+        "accuracy": 0.7299435028248588,
+        "f1_macro": 0.6771500811031727,
+        "recall_dropout": 0.6936619718309859,
+        "precision_dropout": 0.7911646586345381,
+        "f1_dropout": 0.7392120075046904,
+        "roc_auc_dropout": 0.8983501675611072,
+        "pr_auc_dropout": 0.8474334349481922,
+        "recall_enrolled": 0.5094339622641509,
+        "recall_graduate": 0.832579185520362
+      },
+      "alert_at_medium": {
+        "seuil": 0.1819,
+        "rappel": 0.9014084507042254,
+        "precision": 0.5517241379310345,
+        "f2": 0.8,
+        "faux_negatifs": 28,
+        "faux_positifs": 208,
+        "part_signalee": 0.5242937853107345
+      },
+      "alert_at_high": {
+        "seuil": 0.3712,
+        "rappel": 0.7394366197183099,
+        "precision": 0.7608695652173914,
+        "f2": 0.7436260623229461,
+        "faux_negatifs": 74,
+        "faux_positifs": 66,
+        "part_signalee": 0.31186440677966104
+      },
+      "risk_levels": [
+        {
+          "niveau": "Risque faible",
+          "effectif": 421,
+          "dropouts": 28,
+          "taux_abandon_reel": 0.0665083135391924,
+          "part_des_dropouts": 0.09859154929577464
+        },
+        {
+          "niveau": "Risque moyen",
+          "effectif": 188,
+          "dropouts": 46,
+          "taux_abandon_reel": 0.24468085106382978,
+          "part_des_dropouts": 0.1619718309859155
+        },
+        {
+          "niveau": "Risque élevé",
+          "effectif": 276,
+          "dropouts": 210,
+          "taux_abandon_reel": 0.7608695652173914,
+          "part_des_dropouts": 0.7394366197183099
+        }
+      ],
+      "top_importance": [
+        {
+          "variable": "cu_1st_sem_approved",
+          "importance_mean": 0.2117,
+          "importance_std": 0.0075
+        },
+        {
+          "variable": "cu_1st_sem_enrolled",
+          "importance_mean": 0.043,
+          "importance_std": 0.0108
+        },
+        {
+          "variable": "tuition_fees_up_to_date",
+          "importance_mean": 0.0313,
+          "importance_std": 0.0076
+        },
+        {
+          "variable": "cu_1st_sem_evaluations",
+          "importance_mean": 0.0199,
+          "importance_std": 0.0077
+        },
+        {
+          "variable": "scholarship_holder",
+          "importance_mean": 0.0101,
+          "importance_std": 0.0032
+        },
+        {
+          "variable": "debtor",
+          "importance_mean": 0.0097,
+          "importance_std": 0.003
+        },
+        {
+          "variable": "course",
+          "importance_mean": 0.0088,
+          "importance_std": 0.0035
+        },
+        {
+          "variable": "gdp",
+          "importance_mean": 0.0068,
+          "importance_std": 0.002
+        }
+      ]
+    },
+    "C_fin_S2": {
+      "retained_model": "hist_gradient_boosting",
+      "thresholds": {
+        "seuil_moyen": 0.1339,
+        "seuil_eleve": 0.3963,
+        "rappel_vise_seuil_moyen": 0.9
+      },
+      "test": {
+        "accuracy": 0.7299435028248588,
+        "f1_macro": 0.6910226445754727,
+        "recall_dropout": 0.6830985915492958,
+        "precision_dropout": 0.7983539094650206,
+        "f1_dropout": 0.7362428842504743,
+        "roc_auc_dropout": 0.9114035293290524,
+        "pr_auc_dropout": 0.8708734487258961,
+        "recall_enrolled": 0.6289308176100629,
+        "recall_graduate": 0.7963800904977375
+      },
+      "alert_at_medium": {
+        "seuil": 0.1339,
+        "rappel": 0.9119718309859155,
+        "precision": 0.5981524249422633,
+        "f2": 0.8253664754620778,
+        "faux_negatifs": 25,
+        "faux_positifs": 174,
+        "part_signalee": 0.48926553672316386
+      },
+      "alert_at_high": {
+        "seuil": 0.3963,
+        "rappel": 0.721830985915493,
+        "precision": 0.7884615384615384,
+        "f2": 0.7342406876790831,
+        "faux_negatifs": 79,
+        "faux_positifs": 55,
+        "part_signalee": 0.2937853107344633
+      },
+      "risk_levels": [
+        {
+          "niveau": "Risque faible",
+          "effectif": 452,
+          "dropouts": 25,
+          "taux_abandon_reel": 0.05530973451327434,
+          "part_des_dropouts": 0.0880281690140845
+        },
+        {
+          "niveau": "Risque moyen",
+          "effectif": 173,
+          "dropouts": 54,
+          "taux_abandon_reel": 0.31213872832369943,
+          "part_des_dropouts": 0.19014084507042253
+        },
+        {
+          "niveau": "Risque élevé",
+          "effectif": 260,
+          "dropouts": 205,
+          "taux_abandon_reel": 0.7884615384615384,
+          "part_des_dropouts": 0.721830985915493
+        }
+      ],
+      "top_importance": [
+        {
+          "variable": "cu_2nd_sem_approved",
+          "importance_mean": 0.164,
+          "importance_std": 0.0158
+        },
+        {
+          "variable": "cu_1st_sem_approved",
+          "importance_mean": 0.0498,
+          "importance_std": 0.0064
+        },
+        {
+          "variable": "tuition_fees_up_to_date",
+          "importance_mean": 0.0412,
+          "importance_std": 0.0047
+        },
+        {
+          "variable": "cu_2nd_sem_enrolled",
+          "importance_mean": 0.0317,
+          "importance_std": 0.0052
+        },
+        {
+          "variable": "cu_1st_sem_enrolled",
+          "importance_mean": 0.0196,
+          "importance_std": 0.0037
+        },
+        {
+          "variable": "course",
+          "importance_mean": 0.0093,
+          "importance_std": 0.003
+        },
+        {
+          "variable": "mother_occupation",
+          "importance_mean": 0.0076,
+          "importance_std": 0.0061
+        },
+        {
+          "variable": "scholarship_holder",
+          "importance_mean": 0.0075,
+          "importance_std": 0.0042
+        }
+      ]
+    }
+  },
+  "sensitivity_A_without_fees_debtor": {
+    "excluded": [
+      "debtor",
+      "tuition_fees_up_to_date"
+    ],
+    "cv_f1_macro_with": 0.5780927475289331,
+    "cv_f1_macro_without": 0.5347249536559883,
+    "cv_recall_dropout_with": 0.6147190663884381,
+    "cv_recall_dropout_without": 0.5619290517041502
+  },
+  "reference_reproduction": {
+    "logistic_regression": {
+      "obtenu": {
+        "accuracy": 0.7209039548022599,
+        "f1_macro": 0.6862424873087477,
+        "recall_dropout": 0.6619718309859155,
+        "recall_enrolled": 0.6540880503144654,
+        "recall_graduate": 0.7828054298642534
+      },
+      "annonce_presentation": {
+        "accuracy": 0.72,
+        "f1_macro": 0.69,
+        "recall_dropout": 0.66,
+        "recall_enrolled": 0.65,
+        "recall_graduate": 0.78
+      },
+      "confusion_matrix": [
+        [
+          188,
+          71,
+          25
+        ],
+        [
+          23,
+          104,
+          32
+        ],
+        [
+          10,
+          86,
+          346
+        ]
+      ],
+      "best_params": {
+        "clf__C": 0.1,
+        "selectk__k": 20
+      }
+    },
+    "random_forest": {
+      "obtenu": {
+        "accuracy": 0.784180790960452,
+        "f1_macro": 0.7120568678676147,
+        "recall_dropout": 0.7711267605633803,
+        "recall_enrolled": 0.389937106918239,
+        "recall_graduate": 0.9343891402714932
+      },
+      "annonce_presentation": {
+        "accuracy": 0.77,
+        "f1_macro": 0.7,
+        "recall_dropout": 0.75,
+        "recall_enrolled": 0.38,
+        "recall_graduate": 0.93
+      },
+      "confusion_matrix": [
+        [
+          219,
+          19,
+          46
+        ],
+        [
+          35,
+          62,
+          62
+        ],
+        [
+          11,
+          18,
+          413
+        ]
+      ]
+    },
+    "random_forest_smote": {
+      "obtenu": {
+        "accuracy": 0.7751412429378531,
+        "f1_macro": 0.7238985708157631,
+        "recall_dropout": 0.7288732394366197,
+        "recall_enrolled": 0.5408805031446541,
+        "recall_graduate": 0.8891402714932126
+      },
+      "annonce_presentation": {
+        "accuracy": 0.78,
+        "f1_macro": 0.72,
+        "recall_dropout": 0.73,
+        "recall_enrolled": 0.54,
+        "recall_graduate": 0.89
+      },
+      "confusion_matrix": [
+        [
+          207,
+          38,
+          39
+        ],
+        [
+          29,
+          86,
+          44
+        ],
+        [
+          11,
+          38,
+          393
+        ]
+      ]
+    }
+  },
+  "split": {
+    "n_train": 3539,
+    "n_test": 885,
+    "test_class_counts": {
+      "Graduate": 442,
+      "Dropout": 284,
+      "Enrolled": 159
+    }
+  },
+  "quick_mode": false,
+  "total_time_s": 168.1,
+  "versions": {
+    "sklearn": "1.8.0",
+    "pandas": "2.1.4",
+    "numpy": "1.26.4"
+  }
+}

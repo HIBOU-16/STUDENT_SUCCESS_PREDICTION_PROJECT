@@ -1,0 +1,38 @@
+﻿variable,nom_original_uci,description,type,disponible_a,valeurs_distinctes,min,max,exemple_codes
+marital_status,Marital status,Statut marital (code nominal),catégorielle nominale,inscription,6,1,6,1=Célibataire; 2=Marié(e); 3=Veuf/veuve; 4=Divorcé(e); 5=Union libre; 6=Séparé(e) légalement
+application_mode,Application mode,Mode de candidature (code nominal),catégorielle nominale,inscription,18,1,57,1=1re phase - contingent général; 2=Ordonnance 612/93; 5=1re phase - contingent spécial (Açores); 7=Titulaires d'autres diplômes supérieurs; 10=Ordonnance 854-B/99; 15=Étudiant international (licence)
+application_order,Application order,"Rang du vœu de l'étudiant (0 = premier choix, 9 = dernier)",numérique,inscription,8,0,9,
+course,Course,Cursus suivi (code nominal),catégorielle nominale,inscription,17,33,9991,33=Biofuel Production Technologies; 171=Animation and Multimedia Design; 8014=Social Service (evening); 9003=Agronomy; 9070=Communication Design; 9085=Veterinary Nursing
+daytime_evening_attendance,Daytime/evening attendance,Cours de jour (1) ou du soir (0),binaire,inscription,2,0,1,1=Jour; 0=Soir
+previous_qualification,Previous qualification,Diplôme obtenu avant l'entrée (code nominal),catégorielle nominale,inscription,17,1,43,1=Enseignement secondaire; 2=Licence (bachelor); 3=Diplôme supérieur; 4=Master; 5=Doctorat; 6=Études supérieures suivies
+previous_qualification_grade,Previous qualification (grade),Note du diplôme précédent (0-200),numérique,inscription,101,95.0,190.0,
+nationality,Nacionality,Nationalité (code nominal),catégorielle nominale,inscription,21,1,109,1=Portugaise; 2=Allemande; 6=Espagnole; 11=Italienne; 13=Néerlandaise; 14=Anglaise
+mother_qualification,Mother's qualification,Niveau d'études de la mère (code nominal),catégorielle nominale,inscription,29,1,44,
+father_qualification,Father's qualification,Niveau d'études du père (code nominal),catégorielle nominale,inscription,34,1,44,
+mother_occupation,Mother's occupation,Profession de la mère (code nominal),catégorielle nominale,inscription,32,0,194,
+father_occupation,Father's occupation,Profession du père (code nominal),catégorielle nominale,inscription,46,0,195,
+admission_grade,Admission grade,Note d'admission (0-200),numérique,inscription,620,95.0,190.0,
+displaced,Displaced,Étudiant déplacé (logement hors domicile familial) : 1 = oui,binaire,inscription,2,0,1,1=Oui; 0=Non
+educational_special_needs,Educational special needs,Besoins éducatifs particuliers : 1 = oui,binaire,inscription,2,0,1,1=Oui; 0=Non
+debtor,Debtor,Étudiant débiteur envers l'établissement : 1 = oui,binaire,inscription (date de mesure ambiguë),2,0,1,1=Oui; 0=Non
+tuition_fees_up_to_date,Tuition fees up to date,Frais de scolarité à jour : 1 = oui,binaire,inscription (date de mesure ambiguë),2,0,1,1=Oui; 0=Non
+gender,Gender,"Sexe : 1 = homme, 0 = femme",binaire,inscription,2,0,1,1=Homme; 0=Femme
+scholarship_holder,Scholarship holder,Boursier : 1 = oui,binaire,inscription,2,0,1,1=Oui; 0=Non
+age_at_enrollment,Age at enrollment,Âge à l'inscription (années),numérique,inscription,46,17,70,
+international,International,Étudiant international : 1 = oui,binaire,inscription,2,0,1,1=Oui; 0=Non
+cu_1st_sem_credited,Curricular units 1st sem (credited),Unités curriculaires créditées (équivalences) au 1er semestre,numérique,fin du 1er semestre,21,0,20,
+cu_1st_sem_enrolled,Curricular units 1st sem (enrolled),Unités curriculaires inscrites au 1er semestre,numérique,fin du 1er semestre,23,0,26,
+cu_1st_sem_evaluations,Curricular units 1st sem (evaluations),Nombre d'évaluations passées au 1er semestre,numérique,fin du 1er semestre,35,0,45,
+cu_1st_sem_approved,Curricular units 1st sem (approved),Unités curriculaires validées au 1er semestre,numérique,fin du 1er semestre,23,0,26,
+cu_1st_sem_grade,Curricular units 1st sem (grade),Moyenne des notes au 1er semestre (0-20),numérique,fin du 1er semestre,805,0.0,18.875,
+cu_1st_sem_without_evaluations,Curricular units 1st sem (without evaluations),Unités sans aucune évaluation au 1er semestre,numérique,fin du 1er semestre,11,0,12,
+cu_2nd_sem_credited,Curricular units 2nd sem (credited),Unités curriculaires créditées (équivalences) au 2e semestre,numérique,fin du 2e semestre,19,0,19,
+cu_2nd_sem_enrolled,Curricular units 2nd sem (enrolled),Unités curriculaires inscrites au 2e semestre,numérique,fin du 2e semestre,22,0,23,
+cu_2nd_sem_evaluations,Curricular units 2nd sem (evaluations),Nombre d'évaluations passées au 2e semestre,numérique,fin du 2e semestre,30,0,33,
+cu_2nd_sem_approved,Curricular units 2nd sem (approved),Unités curriculaires validées au 2e semestre,numérique,fin du 2e semestre,20,0,20,
+cu_2nd_sem_grade,Curricular units 2nd sem (grade),Moyenne des notes au 2e semestre (0-20),numérique,fin du 2e semestre,786,0.0,18.571428571428573,
+cu_2nd_sem_without_evaluations,Curricular units 2nd sem (without evaluations),Unités sans aucune évaluation au 2e semestre,numérique,fin du 2e semestre,10,0,12,
+unemployment_rate,Unemployment rate,Taux de chômage national l'année d'entrée (%),numérique,inscription,10,7.6,16.2,
+inflation_rate,Inflation rate,Taux d'inflation national l'année d'entrée (%),numérique,inscription,9,-0.8,3.7,
+gdp,GDP,Croissance du PIB l'année d'entrée (%),numérique,inscription,10,-4.06,3.51,
+target,Target,"Statut final : Dropout (abandon), Enrolled (encore inscrit), Graduate (diplômé)",cible (multiclasse),fin de parcours,3,,,

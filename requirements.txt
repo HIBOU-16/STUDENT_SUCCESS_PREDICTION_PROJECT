@@ -1,0 +1,10 @@
+# Versions testées (Python 3.12, Windows 11) - voir reports/metrics/training_summary.json
+pandas==2.1.4
+numpy==1.26.4
+scipy==1.17.0
+scikit-learn==1.8.0
+imbalanced-learn==0.14.2
+matplotlib==3.11.2
+joblib==1.5.3
+streamlit==1.65.0
+pytest>=8

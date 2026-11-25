@@ -1,0 +1,40 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.0, pytest-9.2.0, pluggy-1.7.0 -- C:\Users\MSI\AppData\Local\Programs\Python\Python312\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\MSI\STUDENT_SUCCESS_PREDICTION_PROJECT
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.15.1
+collecting ... collected 29 items
+
+tests/test_data.py::test_dataset_matches_documentation PASSED            [  3%]
+tests/test_data.py::test_column_names_are_normalized PASSED              [  6%]
+tests/test_data.py::test_kaggle_style_file_is_accepted PASSED            [ 10%]
+tests/test_data.py::test_validate_detects_problems PASSED                [ 13%]
+tests/test_data.py::test_validate_scenario_subset PASSED                 [ 17%]
+tests/test_data.py::test_anonymize_removes_direct_identifiers PASSED     [ 20%]
+tests/test_data.py::test_store_roundtrip PASSED                          [ 24%]
+tests/test_data.py::test_store_rejects_invalid_data PASSED               [ 27%]
+tests/test_data.py::test_data_dictionary_is_complete PASSED              [ 31%]
+tests/test_pipeline.py::test_scenarios_do_not_leak_future_information PASSED [ 34%]
+tests/test_pipeline.py::test_feature_engineering_handles_zero_enrolled PASSED [ 37%]
+tests/test_pipeline.py::test_preprocessor_is_fitted_on_train_only_and_tolerates_unknown_codes PASSED [ 41%]
+tests/test_pipeline.py::test_split_is_stratified_and_reproducible PASSED [ 44%]
+tests/test_pipeline.py::test_smote_is_applied_only_during_training PASSED [ 48%]
+tests/test_pipeline.py::test_selection_rule_prefers_dropout_recall_within_tolerance PASSED [ 51%]
+tests/test_pipeline.py::test_risk_thresholds_are_ordered_and_reach_target_recall PASSED [ 55%]
+tests/test_predict_and_app.py::test_bundle_is_consistent[A_inscription] PASSED [ 58%]
+tests/test_predict_and_app.py::test_bundle_is_consistent[B_fin_S1] PASSED [ 62%]
+tests/test_predict_and_app.py::test_bundle_is_consistent[C_fin_S2] PASSED [ 65%]
+tests/test_predict_and_app.py::test_column_order_and_names_do_not_matter PASSED [ 68%]
+tests/test_predict_and_app.py::test_missing_column_is_reported PASSED    [ 72%]
+tests/test_predict_and_app.py::test_demo_profiles_are_ranked_sensibly PASSED [ 75%]
+tests/test_predict_and_app.py::test_local_explanation_returns_factors PASSED [ 79%]
+tests/test_predict_and_app.py::test_streamlit_app_runs_without_error PASSED [ 82%]
+tests/test_tunisia.py::test_generated_script_is_up_to_date PASSED        [ 86%]
+tests/test_tunisia.py::test_google_script_runs_on_simulated_formapp PASSED [ 89%]
+tests/test_tunisia.py::test_mapping_follows_documented_conventions PASSED [ 93%]
+tests/test_tunisia.py::test_unknown_answer_is_reported PASSED            [ 96%]
+tests/test_tunisia.py::test_evaluation_on_fictitious_data PASSED         [100%]
+
+============================= 29 passed in 11.14s =============================

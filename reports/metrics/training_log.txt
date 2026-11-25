@@ -1,0 +1,21 @@
+Apprentissage : 3539 | Test : 885 | classes test : {'Graduate': 442, 'Dropout': 284, 'Enrolled': 159}
+[A_inscription] baseline_majority        CV macro-F1=0.222 rappel Dropout=0.000 | test macro-F1=0.222 rappel Dropout=0.000 (3s)
+[A_inscription] logistic_regression      CV macro-F1=0.574 rappel Dropout=0.591 | test macro-F1=0.560 rappel Dropout=0.577 (4s)
+[A_inscription] random_forest            CV macro-F1=0.525 rappel Dropout=0.615 | test macro-F1=0.511 rappel Dropout=0.609 (12s)
+[A_inscription] random_forest_smote      CV macro-F1=0.578 rappel Dropout=0.615 | test macro-F1=0.541 rappel Dropout=0.613 (20s)
+[A_inscription] hist_gradient_boosting   CV macro-F1=0.584 rappel Dropout=0.588 | test macro-F1=0.554 rappel Dropout=0.577 (8s)
+[A_inscription] -> retenu : random_forest_smote | seuils {'seuil_moyen': 0.2078, 'seuil_eleve': 0.3163, 'rappel_vise_seuil_moyen': 0.9}
+[B_fin_S1] baseline_majority        CV macro-F1=0.222 rappel Dropout=0.000 | test macro-F1=0.222 rappel Dropout=0.000 (0s)
+[B_fin_S1] logistic_regression      CV macro-F1=0.689 rappel Dropout=0.712 | test macro-F1=0.672 rappel Dropout=0.673 (1s)
+[B_fin_S1] random_forest            CV macro-F1=0.662 rappel Dropout=0.770 | test macro-F1=0.647 rappel Dropout=0.761 (12s)
+[B_fin_S1] random_forest_smote      CV macro-F1=0.699 rappel Dropout=0.728 | test macro-F1=0.677 rappel Dropout=0.694 (18s)
+[B_fin_S1] hist_gradient_boosting   CV macro-F1=0.698 rappel Dropout=0.704 | test macro-F1=0.662 rappel Dropout=0.669 (9s)
+[B_fin_S1] -> retenu : random_forest_smote | seuils {'seuil_moyen': 0.1819, 'seuil_eleve': 0.3712, 'rappel_vise_seuil_moyen': 0.9}
+[C_fin_S2] baseline_majority        CV macro-F1=0.222 rappel Dropout=0.000 | test macro-F1=0.222 rappel Dropout=0.000 (0s)
+[C_fin_S2] logistic_regression      CV macro-F1=0.718 rappel Dropout=0.739 | test macro-F1=0.693 rappel Dropout=0.690 (2s)
+[C_fin_S2] random_forest            CV macro-F1=0.697 rappel Dropout=0.780 | test macro-F1=0.702 rappel Dropout=0.778 (13s)
+[C_fin_S2] random_forest_smote      CV macro-F1=0.727 rappel Dropout=0.743 | test macro-F1=0.711 rappel Dropout=0.711 (20s)
+[C_fin_S2] hist_gradient_boosting   CV macro-F1=0.723 rappel Dropout=0.752 | test macro-F1=0.691 rappel Dropout=0.683 (9s)
+[C_fin_S2] -> retenu : hist_gradient_boosting | seuils {'seuil_moyen': 0.1339, 'seuil_eleve': 0.3963, 'rappel_vise_seuil_moyen': 0.9}
+Reproduction de la présentation de référence ...
+Terminé en 162.4 s

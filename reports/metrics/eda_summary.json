@@ -1,0 +1,151 @@
+{
+  "n_rows": 4424,
+  "n_features": 36,
+  "class_counts": {
+    "Dropout": 1421,
+    "Enrolled": 794,
+    "Graduate": 2209
+  },
+  "class_share": {
+    "Dropout": 0.3212,
+    "Enrolled": 0.1795,
+    "Graduate": 0.4993
+  },
+  "top_associations": [
+    {
+      "variable": "cu_2nd_approval_rate",
+      "test": "Kruskal-Wallis",
+      "taille_effet": 0.497
+    },
+    {
+      "variable": "tuition_fees_up_to_date",
+      "test": "Chi2",
+      "taille_effet": 0.431
+    },
+    {
+      "variable": "cu_2nd_sem_approved",
+      "test": "Kruskal-Wallis",
+      "taille_effet": 0.428
+    },
+    {
+      "variable": "cu_1st_approval_rate",
+      "test": "Kruskal-Wallis",
+      "taille_effet": 0.413
+    },
+    {
+      "variable": "cu_1st_sem_approved",
+      "test": "Kruskal-Wallis",
+      "taille_effet": 0.353
+    },
+    {
+      "variable": "cu_2nd_sem_grade",
+      "test": "Kruskal-Wallis",
+      "taille_effet": 0.314
+    },
+    {
+      "variable": "scholarship_holder",
+      "test": "Chi2",
+      "taille_effet": 0.304
+    },
+    {
+      "variable": "course",
+      "test": "Chi2",
+      "taille_effet": 0.251
+    },
+    {
+      "variable": "cu_1st_sem_grade",
+      "test": "Kruskal-Wallis",
+      "taille_effet": 0.247
+    },
+    {
+      "variable": "debtor",
+      "test": "Chi2",
+      "taille_effet": 0.242
+    }
+  ],
+  "top_mutual_information": {
+    "cu_2nd_approval_rate": 0.3468,
+    "cu_2nd_sem_approved": 0.3101,
+    "cu_1st_approval_rate": 0.2873,
+    "cu_1st_sem_approved": 0.2349,
+    "cu_2nd_sem_grade": 0.2307,
+    "cu_1st_sem_grade": 0.193,
+    "cu_2nd_eval_per_unit": 0.1209,
+    "grade_trend": 0.1076,
+    "cu_1st_eval_per_unit": 0.0953,
+    "tuition_fees_up_to_date": 0.0918
+  },
+  "median_by_class": {
+    "cu_1st_approval_rate": {
+      "Dropout": 0.333,
+      "Enrolled": 0.8,
+      "Graduate": 1.0
+    },
+    "cu_1st_sem_grade": {
+      "Dropout": 10.929,
+      "Enrolled": 12.0,
+      "Graduate": 13.0
+    },
+    "cu_2nd_approval_rate": {
+      "Dropout": 0.0,
+      "Enrolled": 0.692,
+      "Graduate": 1.0
+    },
+    "admission_grade": {
+      "Dropout": 123.6,
+      "Enrolled": 124.1,
+      "Graduate": 127.4
+    },
+    "age_at_enrollment": {
+      "Dropout": 23.0,
+      "Enrolled": 20.0,
+      "Graduate": 19.0
+    }
+  },
+  "dropout_rate_engagement_s1": {
+    "0 éval.": 0.705,
+    "≤1 éval./UE": 0.245,
+    "1-1,5": 0.225,
+    ">1,5": 0.417
+  },
+  "dropout_rate_no_eval_s1": {
+    "Aucune": 0.314,
+    "≥1 UE sans évaluation": 0.422
+  },
+  "dropout_rate_binary": {
+    "Frais à jour": {
+      "0": 0.866,
+      "1": 0.247
+    },
+    "Débiteur": {
+      "0": 0.283,
+      "1": 0.62
+    },
+    "Boursier": {
+      "0": 0.387,
+      "1": 0.122
+    },
+    "Homme": {
+      "0": 0.251,
+      "1": 0.451
+    },
+    "Déplacé": {
+      "0": 0.376,
+      "1": 0.276
+    },
+    "Cours du jour": {
+      "0": 0.429,
+      "1": 0.308
+    }
+  },
+  "dropout_rate_age": {
+    "≤20": 0.212,
+    "21-25": 0.356,
+    "26-30": 0.598,
+    "31-40": 0.551,
+    ">40": 0.507
+  },
+  "corr_s1_s2_grade": 0.762,
+  "corr_s1_s2_approved": 0.892,
+  "macro_unique_years": 10
+}
